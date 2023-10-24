@@ -18,7 +18,7 @@ class Student{
           }
           Student(String a,int b, int c, int d, short e, float f) throws SeatFilled{
                     s1 = new SeatFilled();
-                    if(c>=25){
+                    if(count>=25){
                               throw s1;
                     }
                     g1 = new GregorianCalendar(d,c,b);

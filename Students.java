@@ -1,5 +1,5 @@
 import java.util.*;
-class Student{
+class Std{
           String sname;
           int[] marks_array = new int[10];
           int total, avg;
@@ -33,7 +33,7 @@ class Student{
 public class Students {
           public static void main(String[] args) {
                     System.out.println("Input Details");
-                    Student s1 = new Student();
+                    Std s1 = new Std();
                     s1.assign();
                     s1.compute();              
           }

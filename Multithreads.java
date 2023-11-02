@@ -1,7 +1,7 @@
 import java.util.Scanner;
-class Threads extends Thread {
+class Threeads extends Thread {
           String thrd;
-          Threads(){
+          Threeads(){
                     Scanner sc = new Scanner(System.in);
                     System.out.println("Name for your Thread");
                     thrd = sc.nextLine();
@@ -23,7 +23,7 @@ class Threads extends Thread {
 }
 public class Multithreads {
           public static void main(String[] args) throws Exception {
-                    Threads t1 = new Threads();
+                    Threeads t1 = new Threeads();
                     t1.start();
                     System.out.println(t1.isAlive());
                     t1.join();//Waits for the end of Thread

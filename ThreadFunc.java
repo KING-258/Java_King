@@ -1,7 +1,7 @@
 import java.util.Scanner;
-class Threads extends Thread {
+class Thrd extends Thread {
           String thrd;
-          Threads(){
+          Thrd(){
                     Scanner sc = new Scanner(System.in);
                     System.out.println("Name for your Thread");
                     thrd = sc.nextLine();
@@ -23,7 +23,7 @@ class Threads extends Thread {
 }
 public class ThreadFunc{
           public static void main(String[] args) throws Exception {
-                    Threads t1 = new Threads();
+                    Thrd t1 = new Thrd();
                     System.out.println("Name of the Thread by Default : " + t1.getName());
                     t1.start();
                     t1.join();

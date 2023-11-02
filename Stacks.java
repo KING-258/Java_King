@@ -1,5 +1,5 @@
 import java.util.*;
-class Stack{
+class StackC{
           int[] arr = new int[10];
           int tos;
           Scanner sc = new Scanner(System.in);
@@ -47,7 +47,7 @@ class Stack{
 public class Stacks {         
           public static void main(String[] args) {
                     int a, b, c, d;
-                    Stack s1 = new Stack();
+                    StackC s1 = new StackC();
                     Scanner sc = new Scanner(System.in);
                     System.out.println("Input Number of Elements for Stack");
                     a = sc.nextInt();

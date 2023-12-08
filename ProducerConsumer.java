@@ -10,7 +10,10 @@ class Goods{
         System.out.println("Put : " + a);
         num = a;
         avail = 1;
-        notify();
+        try {
+            Thread.sleep(1000);
+            notify();
+        }catch(Exception e){}
     }
     public synchronized void get(){
         while (avail == 0){
@@ -20,7 +23,10 @@ class Goods{
         }
         System.out.println("Get : " + num);
         avail = 0;
-        notify();
+        try {
+            Thread.sleep(1000);
+            notify();
+        }catch(Exception e){}
     }
 }
 class Producer extends Thread{
